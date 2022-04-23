@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  least-cost-routing:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    volumes:
+      - ./src:/home/node/app/src
+      - ./nodemon.json:/home/node/app/nodemon.json
+    container_name: least-cost-routing
+    expose:
+      - '3000'
+    ports:
+      - '3000:3000'
+    command: yarn dev
