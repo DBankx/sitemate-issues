@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 const PORT = process.env.PORT || 3000;
 
 // Route handlers
-const issue = require('./controllers/api/v1/issue.controller');
+const issue = require('./routes/api/v1/issues.routes');
 
 
 // Mount routes
@@ -23,3 +23,5 @@ app.get('/', (req: Request, res: Response) => {
 app.listen(PORT, () => {
 	console.log(`Application running on port ${PORT}`);
 })
+
+module.exports = app;

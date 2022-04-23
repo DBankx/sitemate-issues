@@ -1,8 +1,8 @@
-function ApiResponse(data: any, message: string, status: boolean){
+function ApiResponse(data: any, message: string, code: number) {
 	return {
 		data,
 		message,
-		status
+		code
 	}
 }
 
