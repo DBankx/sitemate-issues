@@ -9,7 +9,7 @@ services:
     volumes:
       - ./src:/home/node/app/src
       - ./nodemon.json:/home/node/app/nodemon.json
-    container_name: least-cost-routing
+    container_name: sitemate-issues
     expose:
       - '3000'
     ports:
