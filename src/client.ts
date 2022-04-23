@@ -19,6 +19,7 @@ inquirer
 		  OPTIONS.post,
 		  OPTIONS.put,
 		  OPTIONS.delete,
+		  OPTIONS.list,
 	  ] },
   ])
   .then(answers => {
