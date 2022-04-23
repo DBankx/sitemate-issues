@@ -98,7 +98,7 @@ class IssueController {
 			IssueDao.deleteIssueById(issueId);
 
 			// return response
-			return res.status(200).json(ApiResponse(null, 'Issue deleted successfully', 200));
+			return res.status(200).json(ApiResponse(null, `Issue with id: ${issueId} was deleted successfully`, 200));
 		}catch(error){
 			res.status(500).json(ApiErrorResponse(error, 'Error occurred deleting issue', 500));
 		}
